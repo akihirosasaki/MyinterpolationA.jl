@@ -4,11 +4,9 @@ Julia code for interpolation
 function myinterpolationA(grid, vals)
     function func(x)
         if x <= grid[1]
-            index_1 = 1
-            index_2 = 2
+            return "error"
         elseif x >= grid[length(grid)]
-            index_1 = length(grid) - 1
-            index_2 = length(grid)
+            return "error"
         else
             index_1 = searchsortedfirst(grid, x)
             index_2 = searchsortedlast(grid, x)
