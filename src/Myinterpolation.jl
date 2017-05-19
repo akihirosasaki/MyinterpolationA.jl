@@ -1,4 +1,4 @@
-module MyInterpolationA
+module MyinterpolationA
 
 function myinterpolationA(grid, vals)
     function func(x)
