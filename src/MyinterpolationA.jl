@@ -3,9 +3,9 @@ export myinterpolationA
 
 function myinterpolationA(grid, vals)
     function func(x)
-        if x <= grid[1]
+        if x < grid[1]
             return "error"
-        elseif x >= grid[length(grid)]
+        elseif x > grid[length(grid)]
             return "error"
         else
             num_1 = searchsortedfirst(grid, x)
