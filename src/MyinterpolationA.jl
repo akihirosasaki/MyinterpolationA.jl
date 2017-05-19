@@ -1,4 +1,5 @@
 module MyinterpolationA
+export myinterpolationA
 
 function myinterpolationA(grid, vals)
     function func(x)
