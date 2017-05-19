@@ -1,7 +1,7 @@
-using MyInterpolations
+using MyInterpolationA
 using Base.Test
 
-const _lin_interp = my_lin_interp
+const _lin_interp = myinterpolationA
 
 @testset "Testing linear interporation" begin
     @testset "case with two grid points" begin
